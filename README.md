@@ -42,7 +42,6 @@ Enable predictive maintenance strategies
 
 📈 Applications
 
-Smart home appliances
 
 Industrial equipment monitoring
 
@@ -53,3 +52,18 @@ IoT-based condition monitoring
 💡 Goal
 
 To demonstrate how affordable IoT hardware + sensor data can be used to build an intelligent predictive maintenance system for everyday appliances.
+
+
+| Sensor                 | Pin Name         | ESP32 Pin               |
+| ---------------------- | ---------------- | ----------------------- |
+| 🌡️ DS18B20            | DATA             | **GPIO 4**              |
+|                        | VCC              | 3.3V                    |
+|                        | GND              | GND                     |
+| ⚠️                     | Pull-up resistor | **4.7kΩ (DATA ↔ 3.3V)** |
+| ⚙️ MPU6050             | SDA              | **GPIO 21**             |
+|                        | SCL              | **GPIO 22**             |
+|                        | VCC              | 3.3V                    |
+|                        | GND              | GND                     |
+| 🔄 Hall Sensor (A3144) | OUT              | **GPIO 5**              |
+|                        | VCC              | 3.3V                    |
+|                        | GND              | GND                     |
